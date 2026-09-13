@@ -1,0 +1,22 @@
+{
+  "gui.dailyrewards.button": "Daily Rewards",
+  "gui.dailyrewards.title": "DAILY REWARDS",
+  "gui.dailyrewards.streak": "Streak: %s",
+  "gui.dailyrewards.day": "Day %s",
+  "gui.dailyrewards.weekly_label": "WEEKLY",
+  "gui.dailyrewards.milestone_label": "MILESTONE",
+  "gui.dailyrewards.locked": "LOCKED",
+  "gui.dailyrewards.claim_hint": "CLAIM",
+  "gui.dailyrewards.claimed": "CLAIMED",
+  "gui.dailyrewards.timer": "%sh %sm Remaining",
+  "gui.dailyrewards.reward_title": "REWARD CLAIMED!",
+  "gui.dailyrewards.weekly_title": "WEEKLY REWARD!",
+  "gui.dailyrewards.milestone_title": "MILESTONE REWARD!",
+  "gui.dailyrewards.streak_milestone": "%s DAY STREAK BONUS!",
+  "gui.dailyrewards.rarity.common": "Common",
+  "gui.dailyrewards.rarity.uncommon": "Uncommon",
+  "gui.dailyrewards.rarity.rare": "Rare",
+  "gui.dailyrewards.rarity.epic": "Epic",
+  "gui.dailyrewards.rarity.legendary": "Legendary",
+  "gui.dailyrewards.rarity.mythic": "Mythic"
+}

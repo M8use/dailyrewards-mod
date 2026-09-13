@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.execheinz.dailyrewards.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "EffectRenderingInventoryScreenMixin"
+  ]
+}

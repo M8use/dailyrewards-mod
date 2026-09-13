@@ -1,0 +1,27 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "All Rights Reserved"
+
+[[mixins]]
+config = "dailyrewards.mixins.json"
+
+[[mods]]
+modId = "dailyrewards"
+version = "1.0.0"
+displayName = "Daily Rewards"
+authors = "M8use"
+description = "A daily login reward calendar with streaks, weekly and milestone bonuses."
+
+[[dependencies."dailyrewards"]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."dailyrewards"]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "BOTH"

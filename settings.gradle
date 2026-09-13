@@ -1,0 +1,15 @@
+pluginManagement {
+    repositories {
+        // NeoForge's own Gradle plugins (ModDevGradle, NeoGradle) live here.
+        maven { url = 'https://maven.neoforged.net/releases' }
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+plugins {
+    // Makes sure everyone building this project gets a matching JDK automatically.
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0'
+}
+
+rootProject.name = 'dailyrewards'

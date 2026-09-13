@@ -1,0 +1,60 @@
+plugins {
+    id 'net.neoforged.moddev' version '2.0.78'
+}
+
+tasks.named('wrapper', Wrapper).configure {
+    gradleVersion = '8.8'
+    distributionType = Wrapper.DistributionType.BIN
+}
+
+version = mod_version
+group = mod_group_id
+
+base {
+    archivesName = mod_id
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+repositories {
+    mavenCentral()
+}
+
+neoForge {
+    version = neo_version
+
+    // Validates access-transformer entries at build time instead of silently ignoring typos.
+    validateAccessTransformers = true
+
+    runs {
+        client {
+            client()
+        }
+        data {
+            data()
+        }
+        server {
+            server()
+        }
+    }
+
+    mods {
+        dailyrewards {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+// Reproducible jar metadata.
+tasks.named('jar', Jar) {
+    manifest {
+        attributes([
+            'Specification-Title'   : mod_id,
+            'Specification-Vendor'  : mod_authors,
+            'Specification-Version' : '1',
+            'Implementation-Title'  : mod_name,
+            'Implementation-Version': project.version,
+            'Implementation-Vendor' : mod_authors
+        ])
+    }
+}
